@@ -1,0 +1,8 @@
+flask
+flask-cors
+gunicorn
+mistralai
+requests
+numpy
+faiss-cpu
+PyPDF2

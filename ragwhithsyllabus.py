@@ -14,7 +14,7 @@ client = Mistral(api_key=api_key)
 
 from PyPDF2 import PdfReader
 
-file_path = "C:\\Users\\debai\\Documents\\informatique\\Formation Christofer AI\\projet1\\Syllabus_Ing_2024_2025.pdf"
+file_path = "Syllabus_Ing_2024_2025.pdf"
 reader = PdfReader(file_path)
 text = ""
 for page in reader.pages:
