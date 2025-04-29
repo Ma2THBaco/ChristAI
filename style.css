@@ -40,15 +40,16 @@ header .logo {
     height: 100vh;
     gap: 10px;
     margin: auto;
-    width: 500px;
+    width: 1000px;
 }
 #input { 
     width: 300px; 
     margin-top: 10px; 
+    margin-left: 28%;
     
 }
 #chatbox {
-    width: 350px; /* Largeur de la chatbox */
+    width: 1000px; /* Largeur de la chatbox */
     height: 400px; /* Hauteur de la chatbox */
     border: 1px solid #ccc; /* Bordure grise */
     overflow-y: auto; /* Ajoute un défilement vertical si le contenu dépasse */
