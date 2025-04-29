@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Supprime les marges par défaut */
+    display: flex; /* Active Flexbox */
+    flex-direction: column;
+    justify-content: flex-start; /* Centre horizontalement */
+    align-items: center; /* Centre horizontalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #f4f4f9; /* Optionnel : ajoute une couleur de fond */
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre le titre et le logo */
+    padding: 10px 20px; /* Ajoute un espace intérieur */
+    width: 100%; /* Prend toute la largeur */
+    box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
+    margin-bottom: 20px; /* Ajoute un espace en bas */
+    margin-top: 0; /* Supprime la marge supérieure */
+}
+header h1 {
+    margin: 0; /* Supprime les marges par défaut */
+    flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+header .logo {
+    width: 100px; /* Ajustez la taille du logo */
+    height: auto; /* Conserve les proportions */
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    gap: 10px;
+    margin: auto;
+    width: 500px;
+}
+#input { 
+    width: 300px; 
+    margin-top: 10px; 
+    
+}
+#chatbox {
+    width: 350px; /* Largeur de la chatbox */
+    height: 400px; /* Hauteur de la chatbox */
+    border: 1px solid #ccc; /* Bordure grise */
+    overflow-y: auto; /* Ajoute un défilement vertical si le contenu dépasse */
+    padding: 10px; /* Ajoute un espace intérieur */
+    background-color: #f9f9f9; /* Couleur de fond */
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne les messages verticalement */
+    align-items: flex-start; /* Centre horizontalement */
+    justify-content: flex-start; /* Centre verticalement */
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding: 10px 20px; /* Ajoute un espace intérieur */
+    width: 100%; /* Prend toute la largeur */
+    box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
+    margin-top: auto; /* Pousse le footer vers le bas */
+    text-align: center; /* Centre le texte si plusieurs lignes */
+}
+.footer-link {
+    color: white; /* Change la couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.footer-link:hover {
+    color: #ccc; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
