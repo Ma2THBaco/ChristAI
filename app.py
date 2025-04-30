@@ -5,6 +5,10 @@ from ragwhithsyllabus import run_mistral
 app = Flask(__name__)
 CORS(app)  # Active CORS pour toutes les routes
 
+@app.route("/")
+def home():
+    return "Bienvenue sur le backend du chatbot !"
+
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
