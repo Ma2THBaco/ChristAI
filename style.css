@@ -1,26 +1,30 @@
-
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0; /* Supprime les marges par défaut */
     display: flex; /* Active Flexbox */
     flex-direction: column;
-    justify-content: flex-start; /* Centre horizontalement */
-    align-items: center; /* Centre horizontalement */
+    justify-content: flex-start;
+    align-items: center;
     height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    background-color: #f4f4f9; /* Optionnel : ajoute une couleur de fond */
+    background-color: #f4f4f9; /* Couleur de fond */
 }
+
+/* Header styles */
 header {
     background: #35424a;
     color: #ffffff;
     display: flex; /* Active Flexbox */
     align-items: center; /* Centre verticalement les éléments */
     justify-content: space-between; /* Espace entre le titre et le logo */
-    padding: 10px 20px; /* Ajoute un espace intérieur */
+    padding: 10px 15px; /* Ajoute un espace intérieur */
     width: 100%; /* Prend toute la largeur */
     box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
-    margin-bottom: 20px; /* Ajoute un espace en bas */
-    margin-top: 0; /* Supprime la marge supérieure */
+    margin: 0; /* Supprime les marges */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    min-height: 60px; /* Définit une hauteur minimale */
 }
+
 header h1 {
     margin: 0; /* Supprime les marges par défaut */
     flex: 1; /* Permet au titre de prendre tout l'espace disponible */
@@ -28,39 +32,12 @@ header h1 {
 }
 
 header .logo {
-    width: 100px; /* Ajustez la taille du logo */
-    height: auto; /* Conserve les proportions */
+    width: 80px; /* Ajuste la taille du logo */
+    height: auto; /* Conserve le ratio d'aspect */
     margin-right: 20px;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    gap: 10px;
-    margin: auto;
-    width: 1000px;
-}
-#input { 
-    width: 300px; 
-    margin-top: 10px; 
-    margin-left: 28%;
-    
-}
-#chatbox {
-    width: 1000px; /* Largeur de la chatbox */
-    height: 400px; /* Hauteur de la chatbox */
-    border: 1px solid #ccc; /* Bordure grise */
-    overflow-y: auto; /* Ajoute un défilement vertical si le contenu dépasse */
-    padding: 10px; /* Ajoute un espace intérieur */
-    background-color: #f9f9f9; /* Couleur de fond */
-    display: flex; /* Active Flexbox */
-    flex-direction: column; /* Aligne les messages verticalement */
-    align-items: flex-start; /* Centre horizontalement */
-    justify-content: flex-start; /* Centre verticalement */
-}
 
+/* Footer styles */
 footer {
     background: #35424a;
     color: #ffffff;
@@ -73,6 +50,7 @@ footer {
     margin-top: auto; /* Pousse le footer vers le bas */
     text-align: center; /* Centre le texte si plusieurs lignes */
 }
+
 .footer-link {
     color: white; /* Change la couleur du texte */
     text-decoration: none; /* Supprime le soulignement */
@@ -80,5 +58,79 @@ footer {
 
 .footer-link:hover {
     color: #ccc; /* Change la couleur au survol */
-    text-decoration: underline; /* Ajoute un soulignement au survol */
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    gap: 10px;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px; 
+    background-color: red;
+}
+
+/* Chatbox styles */
+#chatbox {
+    width: 100px;
+    max-width: 100%; 
+    height: 60vh; 
+    border: 1px solid blue;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px auto; 
+}
+
+/* Input styles */
+#input {
+    width: 80%; /* Largeur relative */
+    margin: 10px auto; /* Centrer horizontalement */
+    padding: 5px; /* Ajoute un espace intérieur */
+}
+
+/* Button styles */
+button {
+    padding: 5px 10px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2a3a40;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Ajuste la hauteur pour petits écrans */
+        padding: 10px;
+    }
+
+    #chatbox {
+        height: 50vh; /* Réduit la hauteur sur les petits écrans */
+    }
+
+    #input {
+        width: 90%; /* Ajuste la largeur pour petits écrans */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Réduit la taille du texte */
+    }
+
+    header .logo {
+        width: 50px; /* Réduit la taille du logo */
+    }
 }
