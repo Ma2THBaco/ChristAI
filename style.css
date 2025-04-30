@@ -1,136 +1,84 @@
-/* Global styles */
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Supprime les marges par défaut */
-    display: flex; /* Active Flexbox */
+    margin: 0; 
+    display: flex; 
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    background-color: #f4f4f9; /* Couleur de fond */
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #f4f4f9; 
 }
-
-/* Header styles */
 header {
     background: #35424a;
     color: #ffffff;
-    display: flex; /* Active Flexbox */
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: space-between; /* Espace entre le titre et le logo */
-    padding: 10px 15px; /* Ajoute un espace intérieur */
-    width: 100%; /* Prend toute la largeur */
-    box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
-    margin: 0; /* Supprime les marges */
-    height: auto; /* Ajuste automatiquement la hauteur */
-    min-height: 60px; /* Définit une hauteur minimale */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    margin-top: 0; 
 }
-
 header h1 {
-    margin: 0; /* Supprime les marges par défaut */
-    flex: 1; /* Permet au titre de prendre tout l'espace disponible */
-    text-align: center; /* Centre le texte horizontalement */
+    margin: 0; 
+    flex: 1; 
+    text-align: center; 
 }
 
 header .logo {
-    width: 80px; /* Ajuste la taille du logo */
-    height: auto; /* Conserve le ratio d'aspect */
+    width: 100px; 
+    height: auto; 
     margin-right: 20px;
 }
-
-/* Footer styles */
-footer {
-    background: #35424a;
-    color: #ffffff;
-    display: flex; /* Active Flexbox */
-    align-items: center; /* Centre verticalement les éléments */
-    justify-content: center; /* Centre horizontalement les éléments */
-    padding: 10px 20px; /* Ajoute un espace intérieur */
-    width: 100%; /* Prend toute la largeur */
-    box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur totale */
-    margin-top: auto; /* Pousse le footer vers le bas */
-    text-align: center; /* Centre le texte si plusieurs lignes */
-}
-
-.footer-link {
-    color: white; /* Change la couleur du texte */
-    text-decoration: none; /* Supprime le soulignement */
-}
-
-.footer-link:hover {
-    color: #ccc; /* Change la couleur au survol */
-    text-decoration: underline;
-}
-
-/* Container styles */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    justify-content: flex-start;
+    height: 100vh;
     gap: 10px;
     margin: auto;
-    width: 90%;
-    max-width: 1200px; 
-    background-color: red;
+    width: 1000px;
 }
-
-/* Chatbox styles */
+#input { 
+    width: 300px; 
+    margin-top: 10px; 
+    margin-left: 28%;
+    
+}
 #chatbox {
-    width: 100px;
-    max-width: 100%; 
-    height: 60vh; 
-    border: 1px solid blue;
-    overflow-y: auto;
-    padding: 10px;
-    background-color: #f9f9f9;
+    width: 1000px; 
+    height: 400px; 
+    border: 1px solid #ccc; 
+    overflow-y: auto; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 10px auto; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px 20px; 
+    width: 100%; 
+    box-sizing: border-box;
+    margin-top: auto; 
+    text-align: center;
 }
-
-/* Input styles */
-#input {
-    width: 80%; /* Largeur relative */
-    margin: 10px auto; /* Centrer horizontalement */
-    padding: 5px; /* Ajoute un espace intérieur */
-}
-
-/* Button styles */
-button {
-    padding: 5px 10px;
-    background-color: #35424a;
+.footer-link {
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #2a3a40;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        height: auto; /* Ajuste la hauteur pour petits écrans */
-        padding: 10px;
-    }
-
-    #chatbox {
-        height: 50vh; /* Réduit la hauteur sur les petits écrans */
-    }
-
-    #input {
-        width: 90%; /* Ajuste la largeur pour petits écrans */
-    }
-
-    header h1 {
-        font-size: 1.5rem; /* Réduit la taille du texte */
-    }
-
-    header .logo {
-        width: 50px; /* Réduit la taille du logo */
-    }
+.footer-link:hover {
+    color: #ccc; 
+    text-decoration: underline; 
 }
