@@ -28,7 +28,7 @@ method = (
     "semantic"  # choose method: fixed, recursive, page, sentence, semantic, agentic
 )
 kwargs = {
-    "chunk_size": 400,
+    "chunk_size": 150,
     "separators": ["\n\n", "\n", ". "],
     "n_sentences": 4,
     "task_description": "répondre aux questions de l'étudiant de Centrale",
