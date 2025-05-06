@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from ragwhithsyllabus import run_mistral
+from rag_with_saved_embeddings import run_mistral
 
 app = Flask(__name__)
 CORS(app)  # Active CORS pour toutes les routes
