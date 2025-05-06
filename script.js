@@ -10,7 +10,7 @@ function sendMessage() {
     input.value = '';
 
     // Envoyer la question à l'API Python
-    fetch('https://sitechristai.onrender.com/chat', {
+    fetch('https://christai.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: userMessage })
