@@ -6,7 +6,7 @@ function sendMessage() {
     if (!userMessage) return;
 
     // Afficher le message de l'utilisateur
-    chatbox.innerHTML += `<div><strong>Vous:</strong> ${userMessage}</div>`;
+    chatbox.innerHTML += `<div class="user-message"><strong>Vous : </strong> ${userMessage}</div>`;
     input.value = '';
 
     // Envoyer la question à l'API Python
@@ -19,9 +19,9 @@ function sendMessage() {
     .then(data => {
         if (data.response) {
             const botResponse = data.response;
-            chatbox.innerHTML += `<div><strong>Chatbot:</strong> ${botResponse}</div>`;
+            chatbox.innerHTML += `<div class="chatbot-message"><strong>Chatbot : </strong> ${botResponse}</div>`;
         } else {
-            chatbox.innerHTML += `<div><strong>Chatbot:</strong> Une erreur est survenue.</div>`;
+            chatbox.innerHTML += `<div class="chatbot-error"><strong>Chatbot:</strong> Une erreur est survenue.</div>`;
         }
         chatbox.scrollTop = chatbox.scrollHeight; // Scroll vers le bas
     })

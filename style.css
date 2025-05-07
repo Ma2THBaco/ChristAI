@@ -1,77 +1,36 @@
-
 body {
     font-family: Arial, sans-serif;
-    margin: 0; 
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: center; 
-    height: 100vh; 
-    background-color: #f4f4f9; 
+    justify-content: space-between; /* Place le header en haut et le footer en bas */
+    align-items: stretch; /* Étire les enfants horizontalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #f4f4f9;
 }
 header {
     background: #35424a;
     color: #ffffff;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px 20px; 
-    width: 100%; 
-    box-sizing: border-box; 
-    margin-bottom: 20px; 
-    margin-top: 0; 
-}
-header h1 {
-    margin: 0; 
-    flex: 1; 
-    text-align: center; 
-}
-
-header .logo {
-    width: 100px; 
-    height: auto; 
-    margin-right: 20px;
-}
-.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    gap: 10px;
-    margin: auto;
-    width: 1000px;
-}
-#input { 
-    width: 300px; 
-    margin-top: 10px; 
-    margin-left: 28%;
-    
-}
-#chatbox {
-    width: 1000px; 
-    height: 400px; 
-    border: 1px solid #ccc; 
-    overflow-y: auto; 
-    padding: 10px; 
-    background-color: #f9f9f9; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: flex-start; 
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: space-between;
+    padding: 0.5%; /* Espacement interne */
+    width: 100%;
+    box-sizing: border-box;
+    height: 15%; /* Prend 15% de la hauteur totale */
+
 }
 
 footer {
     background: #35424a;
     color: #ffffff;
     display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 10px 20px; 
-    width: 100%; 
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center;
+    padding: 1%; /* Espacement interne */
+    width: 100%;
     box-sizing: border-box;
-    margin-top: auto; 
-    text-align: center;
+    height: 15%; /* Prend 15% de la hauteur totale */
+
 }
 .footer-link {
     color: white;
@@ -79,6 +38,79 @@ footer {
 }
 
 .footer-link:hover {
-    color: #ccc; 
-    text-decoration: underline; 
+    color: #ccc;
+    text-decoration: underline;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+header .logo {
+    width: auto; /* Largeur du logo */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    margin-right: 2%; /* Espacement à droite */
+    max-height: 100%;
+    border-radius: 48%; /* Bord arrondi pour le logo */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%; /* Espacement entre les éléments internes */
+    width: 80%; /* Largeur fixe */
+    min-height: 0; /* Permet à flexbox de calculer correctement la hauteur */
+    height: 100vh;
+}
+
+#input {
+    width: 30%; /* Conversion de 300px */
+    margin-top: 1%; /* Conversion de 10px */
+    margin-left: 28%;
+}
+#chatbox {
+    width: 70%; /* Largeur constante de la chatbox */
+    height: 95%; /* Hauteur de la chatbox */
+    border: 0.1% solid #ccc; /* Bordure */
+    overflow-y: auto; /* Permet le défilement vertical */
+    padding: 1%; /* Espacement interne */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto; /* Centre horizontalement */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.chatbot-message {
+    margin: 1.5% 0 0.5% 0; /* Conversion de 15px et 5px */
+    padding: 1%; /* Conversion de 10px */
+    border-radius: 0.5%; /* Conversion de 5px */
+    background-color: #f4f4f9;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.chatbot-error {
+    margin: 1.5% 0 0.5% 0; /* Conversion de 15px et 5px */
+    padding: 1%; /* Conversion de 10px */
+    border-radius: 0.5%; /* Conversion de 5px */
+    background-color: #f4f4f9;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #f4f4f9;
+    margin: 0.5% 0 1.5% 0; /* Conversion de 5px et 15px */
+    padding: 1%; /* Conversion de 10px */
+    max-width: 80%;
+    word-wrap: break-word;
+    border-radius: 0.5%; /* Conversion de 5px */
+    text-align: right;
+    align-self: flex-end;
 }
