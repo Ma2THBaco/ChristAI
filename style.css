@@ -20,6 +20,20 @@ header {
 
 }
 
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+header .logo {
+    width: auto; /* Largeur du logo */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    margin-right: 2%; /* Espacement à droite */
+    max-height: 100%;
+    border-radius: 48%; /* Bord arrondi pour le logo */
+}
+
 footer {
     background: #35424a;
     color: #ffffff;
@@ -42,19 +56,7 @@ footer {
     text-decoration: underline;
 }
 
-header h1 {
-    margin: 0;
-    flex: 1;
-    text-align: center;
-}
 
-header .logo {
-    width: auto; /* Largeur du logo */
-    height: auto; /* Ajuste automatiquement la hauteur */
-    margin-right: 2%; /* Espacement à droite */
-    max-height: 100%;
-    border-radius: 48%; /* Bord arrondi pour le logo */
-}
 .container {
     display: flex;
     flex-direction: column;
